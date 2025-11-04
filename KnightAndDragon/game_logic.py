@@ -11,6 +11,8 @@ class EventManager():
         self.curr_loc = self.dragongates
         self.id_dict = {'ВРАТА ДРАКОНА': self.dragongates, 'МЕЖПРОСТРАНСТВЕННЫЙ ПОРТАЛ': self.wormhole, 'ТРЁХГЛАВЫЙ ГИГАНТ': self.giant, 'ПОДОЗРИТЕЛЬНЫЙ КОТ': self.suscat, 'ЛАМПА ДЖИНА': self.genielamp}
         self.line_id = 0
+        self.is_map_accessable = False
+        self.is_intro_ended = False
 
     def loc_from_id(self, id: str) -> GameLocation:
         return self.id_dict[id]
@@ -39,7 +41,11 @@ class GameLocation():
         self.loc_flag = False
         self.dialog_flag = False
         self.encounter_avatar = encounter_ph
+        self.encounter_title = 'ИМЯ'
         self.loc_id = 'ЛОКАЦИЯ'
+        self.dialog_branch = branch_ph
+        self.options = None
+        self.next_branches = None
 
     def on_entry(self):
         pass
@@ -54,6 +60,8 @@ class DragonGates(GameLocation):
         self.dialog_branch = dg_branch_intro_1
         self.options = dg_options_intro
         self.next_branches = dg_next_branches_intro
+        self.riddles_id = 0
+        self.riddles_answers = [['прах']]
 
 class Giant(GameLocation):
 
@@ -71,11 +79,27 @@ class Giant(GameLocation):
 
 class Wormhole(GameLocation):
 
-    pass
+        def __init__(self):
+            super().__init__()
+            self.encounter_avatar = encounter_wormhole
+            self.encounter_title = encounter_title_wormhole
+            self.loc_id = 'МЕЖПРОСТРАНСТВЕННЫЙ ПОРТАЛ'
+            self.dialog_branch = wh_branch_intro_1
+            self.options = wh_options_intro_1
+            self.next_branches = wh_next_branches_intro_1
 
 class SusCat(GameLocation):
 
-    pass
+        def __init__(self):
+            super().__init__()
+            self.encounter_avatar = encounter_suscat
+            self.encounter_title = encounter_title_suscat
+            self.loc_id = 'МЕЖПРОСТРАНСТВЕННЫЙ ПОРТАЛ'
+            self.dialog_branch = sc_branch_1
+            self.options = sc_options_1
+            self.next_branches = sc_next_branches_1
+            self.riddles_id = 0
+            self.riddles_answers = [['эхо'], ['мягкий знак', 'мягким знаком', 'ь'], ['сон']]
 
 class GenieLamp(GameLocation):
 
