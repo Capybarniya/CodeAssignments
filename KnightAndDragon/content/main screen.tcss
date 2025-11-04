@@ -1,0 +1,129 @@
+#Log {
+    text-align: center;
+
+    border: double $foreground;
+    border-subtitle-align: center;
+    border-subtitle-style: bold;
+
+    align-horizontal: center;
+    margin: 2 1 1 1 ;
+
+    scrollbar-visibility: hidden;
+
+}
+
+#inputs{
+    height: 12%;
+}
+
+#Select{
+    align-horizontal: center;
+    margin: 0 1;
+
+
+}
+
+#next_btn{
+
+    height: 3;
+    width: 1;
+
+    text-align: center;
+}
+
+#avatar{
+    border: double $foreground;
+    border-subtitle-align: center;
+
+    align-horizontal: left;
+    margin: 2 1 0 1 ;
+    height: 38%;
+    width: 100%;
+
+    text-align: center;
+    text-overflow: clip;
+
+}
+
+#name{
+    border: double $foreground;
+    border-subtitle-align: center;
+
+    align-horizontal: left;
+    margin: 0 1 1 1 ;
+    height: 7%;
+    width: 100%;
+
+    text-align: center;
+    text-style: bold;
+
+}
+
+#locmap{
+    border: double $foreground;
+    border-subtitle-align: center; 
+    
+    align-horizontal: right;
+    margin: 0 1 1 1 ;
+    width: 100%;
+    height: 60%;
+
+    text-overflow: clip;
+
+}
+
+#word{
+    border: double $foreground;
+    border-subtitle-align: center;    
+
+    align-horizontal: right;
+    margin: 2 1 0 1 ;
+    width: 100%;
+
+    text-align: center;
+    text-style: bold;
+
+}
+
+#v1{
+    width: 17.3%;
+}
+
+#v2{
+    width: 50%;
+}
+
+#v3{
+    width: 32.7%;
+}
+
+#gates_of_dragon{
+    width: 16%;
+    height: 4%;
+    offset: 40 -27;
+}
+
+#treeheaded_giant{
+    width: 16%;
+    height: 4%;
+    offset: 54 -16;
+}
+
+#interdimesinal_portal{
+    width: 32%;
+    height: 4%;
+    offset: 4 -18;
+}
+
+#suspicious_cat{
+    width: 32%;
+    height: 4%;
+    offset: 9 -10;
+
+}
+
+#lamp_of_genie{
+    width: 22%;
+    height: 4%;
+    offset: 45 -12;
+}

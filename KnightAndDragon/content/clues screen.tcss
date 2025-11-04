@@ -1,0 +1,51 @@
+#CLUES{
+
+}
+
+#goal{
+    align: center middle;
+    width: 6%;
+    margin: 4 1 1 1;
+
+    text-align: center;
+}
+
+#l1{
+    margin: 1 1 12 18;
+
+    scrollbar-visibility: hidden;
+
+    border: double $foreground;
+    border-subtitle-align: center;
+    border-subtitle-style: bold;
+}
+
+#l2{
+    margin: 1 1 12 1;
+
+    scrollbar-visibility: hidden;
+
+    border: double $foreground;
+    border-subtitle-align: center;
+    border-subtitle-style: bold;
+}
+
+#l3{
+    margin: 1 1 12 1;
+
+    scrollbar-visibility: hidden;
+
+    border: double $foreground;
+    border-subtitle-align: center;
+    border-subtitle-style: bold;
+}
+
+#l4{
+    margin: 1 18 12 1;
+
+    scrollbar-visibility: hidden;
+
+    border: double $foreground;
+    border-subtitle-align: center;
+    border-subtitle-style: bold;
+}
