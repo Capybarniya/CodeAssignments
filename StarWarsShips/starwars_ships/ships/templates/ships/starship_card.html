@@ -1,0 +1,31 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ starship.name }}</title>
+    <!-- Подключаем Bootstrap для быстрого и красивого стилизации -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ starship.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Модель: {{ starship.model }}</h6>
+                <p class="card-text">
+                    <strong>Производитель:</strong> {{ starship.manufacturer }} <br>
+                    <strong>Стоимость:</strong> {{ starship.cost_in_credits }} кредитов <br>
+                    <strong>Длина:</strong> {{ starship.length }} м <br>
+                    <strong>Макс. скорость:</strong> {{ starship.max_atmosphering_speed }} <br>
+                    <strong>Экипаж:</strong> {{ starship.crew }} <br>
+                    <strong>Пассажиры:</strong> {{ starship.passengers }} <br>
+                    <strong>Грузоподъемность:</strong> {{ starship.cargo_capacity }} кг <br>
+                    <strong>Класс:</strong> {{ starship.starship_class }}
+                </p>
+                <a href="/" class="card-link">Назад к списку</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
